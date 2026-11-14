@@ -1,0 +1,5 @@
+# Keep Linux (LF) line endings, even when the repo is cloned on Windows.
+# Without this, Git on Windows may convert sysmon.sh to CRLF and bash fails
+# with "$'\r': command not found".
+*.sh text eol=lf
+*.md text eol=lf
